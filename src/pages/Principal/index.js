@@ -50,6 +50,20 @@ export default function Principal() {
                     ))}
                 </CategoriaView>
                 <TituloRestaurantes>Restaurantes</TituloRestaurantes>
+                <ViewRestaurantes>
+                    {restaurantes.map(restaurante => (
+                        <RestauranteItem
+                        key={restaurante.id}
+                        foto={restaurante.url_img}
+                        nota={restaurante.nota}
+                        nome={restaurante.nome}
+                        categoria={restaurante.categoria}
+                        distancia={restaurante.distancia}
+                        valorFrete={restaurante.valor_frete}
+                        tempoEntrega={restaurante.tempo_entrega}
+                         />
+                    ))}
+                </ViewRestaurantes>
             </ViewPrincipal>
         )
     }
