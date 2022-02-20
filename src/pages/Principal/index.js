@@ -2,10 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { useState, useContext, useEffect } from 'react'
 import { Text, View, Alert, ActivityIndicator } from 'react-native'
 import RestauranteItem from '../../components/RestauranteItem';
+import CategoriaItem from '../../components/CategoriaItem';
 import {
     SafeAreaView,
     ViewActivity,
-    CategoriesView,
+    CategoriaView,
     BannerView,
     ViewPrincipal,
     ViewRestaurantes,
@@ -43,21 +44,12 @@ export default function Principal() {
     const ViewHome = (props) => {
         return (
             <ViewPrincipal>
-                <TituloRestaurantes>Restaurantes</TituloRestaurantes>
-                <ViewRestaurantes>
-                    {restaurantes.map(restaurante => (
-                        <RestauranteItem
-                        key={restaurante.id}
-                        foto={restaurante.url_img}
-                        nota={restaurante.nota}
-                        nome={restaurante.nome}
-                        categoria={restaurante.categoria}
-                        distancia={restaurante.distancia}
-                        valorFrete={restaurante.valor_frete}
-                        tempoEntrega={restaurante.tempo_entrega}
-                         />
+                <CategoriaView horizontal={true} showsHorizontalScrollIndicator={false}>
+                    {categorias.map(categoria => (
+                        <CategoriaItem key={categoria.id} foto={categoria.img_url} texto={categoria.nome} />
                     ))}
-                </ViewRestaurantes>
+                </CategoriaView>
+                <TituloRestaurantes>Restaurantes</TituloRestaurantes>
             </ViewPrincipal>
         )
     }
