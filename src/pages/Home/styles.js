@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-
+import styled from 'styled-components/native';
+import React from 'react'
 
 export const SafeAreaView = styled.SafeAreaView`
     flex: 1;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 10px;
 `
 
 export const Image = styled.Image`
-    margin: 40px;
+    margin: 25px -10px 15px 25px;
     padding: 80px;
 `
 

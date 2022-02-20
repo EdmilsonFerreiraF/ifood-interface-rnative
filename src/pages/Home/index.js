@@ -1,9 +1,11 @@
 import React from 'react'
 
 import { StatusBar } from 'expo-status-bar';
-import { Button, SafeAreaView, Image, ButtonContainer, StyleSheet, Text, View } from './styles';
+import { Text } from 'react-native'
 
+import { ButtonContainer, SafeAreaView, Image, View } from './styles';
 import banner from '../../assets/img/banner.png'
+import Button from '../../components/Button';
 
 export default function Home() {
     return (
@@ -24,12 +26,3 @@ export default function Home() {
         </>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
