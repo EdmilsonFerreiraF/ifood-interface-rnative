@@ -52,6 +52,13 @@ export default function Principal() {
                         </TextTipoSelect>
                     </ButtonTipoSelect>
                 </SelectTipo>
+                <SelectTipo>
+                    <ButtonTipoSelect onPress={() => setTipo('Retirada')}>
+                        <TextTipoSelect selected={tipo === 'Retirada'}>
+                            Retirada
+                        </TextTipoSelect>
+                    </ButtonTipoSelect>
+                </SelectTipo>
                 <CategoriaView horizontal={true} showsHorizontalScrollIndicator={false}>
                     {categorias.map(categoria => (
                         <CategoriaItem key={categoria.id} foto={categoria.img_url} texto={categoria.nome} />
