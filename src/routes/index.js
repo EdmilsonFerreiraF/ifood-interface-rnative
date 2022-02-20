@@ -14,8 +14,8 @@ const screenOptions = {
 const Routes = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator screenOptions={screenOptions}>
-                {/* <Stack.Screen name="Home" component={Home} /> */}
+            <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
+                <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Main" component={Main} />
             </Stack.Navigator>
         </NavigationContainer>

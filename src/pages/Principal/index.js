@@ -20,6 +20,7 @@ export default function Principal() {
     const [categorias, setCategorias] = useState([])
     const [restaurantes, setRestaurantes] = useState([])
     const [loaded, setLoaded] = useState(false)
+    const [tipo, setTipo] = useState('Entrega')
 
     useEffect(() => {
         async function buscaDados() {
@@ -44,6 +45,13 @@ export default function Principal() {
     const ViewHome = (props) => {
         return (
             <ViewPrincipal>
+                <SelectTipo>
+                    <ButtonTipoSelect onPress={() => setTipo('Entrega')}>
+                        <TextTipoSelect selected={tipo === 'Entrega'}>
+                            Entrega
+                        </TextTipoSelect>
+                    </ButtonTipoSelect>
+                </SelectTipo>
                 <CategoriaView horizontal={true} showsHorizontalScrollIndicator={false}>
                     {categorias.map(categoria => (
                         <CategoriaItem key={categoria.id} foto={categoria.img_url} texto={categoria.nome} />
