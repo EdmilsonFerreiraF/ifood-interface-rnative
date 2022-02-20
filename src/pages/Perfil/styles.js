@@ -3,11 +3,11 @@ import styled from 'styled-components/native';
 export const SafeAreaView = styled.SafeAreaView`
     flex: 1;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 40px;
 `
 
 export const Image = styled.Image`
-    margin: 25px -10px 15px 25px;
+    margin: 40px;
     padding: 80px;
 `
 

@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { CategoriaView, CategoriaFoto, CategoriaTexto } from './style';
+import { CategoriaView, CategoriaFoto, CategoriaTexto } from './styles';
 
 const CategoriaItem = ({ foto, texto, key }) => {
     return (

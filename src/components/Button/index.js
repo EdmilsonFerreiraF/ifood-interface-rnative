@@ -1,4 +1,5 @@
-import { TouchableOpacity, Text } from "./styles"
+import React from 'react'
+import { TouchableOpacity, Text } from './styles'
 
 const Button = ({theme, text, ...rest}) => {
     return (

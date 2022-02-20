@@ -7,30 +7,28 @@ import Perfil from '../Perfil'
 
 const Tab = createBottomTabNavigator();
 
-export default Main = () => {
+const Main = () => {
     return (
-        <Tab.Navigator screenOptions={
-            ({ routes }) => {
+        <Tab.Navigator screenOptions={({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
 
-                    if (routes.name === "Principal") {
+                    if (route.name === "Principal") {
                         iconName = 'home'
-                    } else if (routes.name === 'Perfil') {
+                    } else if (route.name === 'Perfil') {
                         iconName = 'user'
                     }
 
                     return <Feather name={iconName} size={size} color={color} />
-                }
-            }
-        }
-            tabBarOptions={{
-                activeTintColor: 'tomato',
-                inactiveTintColor: 'gray'
-            }}
+                },
+                tabBarActiveTintColor: 'tomato',
+                tabBarInactiveTintColor: 'gray',
+            })}
         >
             <Tab.Screen name="Principal" component={Principal} />
             <Tab.Screen name="Perfil" component={Perfil} />
         </Tab.Navigator>
     )
 }
+
+export default Main

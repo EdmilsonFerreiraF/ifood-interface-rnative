@@ -49,6 +49,11 @@ export default function Principal() {
                         <CategoriaItem key={categoria.id} foto={categoria.img_url} texto={categoria.nome} />
                     ))}
                 </CategoriaView>
+                <BannerView horizontal={true} showsHorizontalScrollIndicator={false}>
+                    {categorias.map(categoria => (
+                        <CategoriaItem key={banner.id} foto={banner.img_url} texto={banner.nome} />
+                    ))}
+                </BannerView>
                 <TituloRestaurantes>Restaurantes</TituloRestaurantes>
                 <ViewRestaurantes>
                     {restaurantes.map(restaurante => (
