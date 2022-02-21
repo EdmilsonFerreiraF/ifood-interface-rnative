@@ -1,54 +1,57 @@
 {
-    "bannerPrincipal": {
-        "img_url": "https://www.linguahouse.com/linguafiles/md5/d01dfa8621f83289155a3be0970fb0cb"
-    },
-    "categorias": [
-        {
-            "id": 1,
-            "img_url": "https://i2.wp.com/files.agro20.com.br/uploads/2020/03/comidabrasileira3.jpg?fit=1024%2C585&ssl=1",
-            "nome": "Brasileira"
+    "token": "bsNKzFErp4dqAbZMjR4PpA",
+    "data": {
+        "banner": {
+            "img_url": "https://www.linguahouse.com/linguafiles/md5/d01dfa8621f83289155a3be0970fb0cb"
         },
-        {
-            "id": 2,
-            "img_url": "https://www.saboravida.com.br/wp-content/uploads/2017/06/o-que-e-cozinha-contemporanea.jpg",
-            "nome": "Contemporânea"
-        },
-        {
-            "id": 3,
-            "img_url": "https://blog.duogourmet.com.br/wp-content/uploads/2019/07/10-Duo-Gourmet-Culinaria.jpg",
-            "nome": "Mediterrânea"
-        }
-    ],
-    "restaurantes": [
-        {
-            "id": 1,
-            "url_img": "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/7d/fa/salao.jpg",
-            "nota": "5",
-            "nome": "Restaurante 1",
-            "categoria": "Brasileira, Mediterrânea, Contemporânea",
-            "distancia": "400km",
-            "valor_frete": "30",
-            "tempo_entrega": "20"
-        },
-        {
-            "id": 2,
-            "url_img": "https://www.englishriviera.co.uk/imageresizer/?image=%2Fdbimgs%2FER%20Gal-Torquay%206-Bistrot%20Pierre%20Restaurants.jpg&action=FeaturedItemsScroll20193x2",
-            "nota": "5",
-            "nome": "Restaurante 2",
-            "categoria": "Brasileira",
-            "distancia": "350km",
-            "valor_frete": "35",
-            "tempo_entrega": "25"
-        },
-        {
-            "id": 3,
-            "url_img": "https://d3m7xw68ay40x8.cloudfront.net/assets/2019/10/23091614/NOV19-charlotte-restaurants-serving-global-fare-hawkers-restaurant-timrobison.jpg",
-            "nota": "5",
-            "nome": "Restaurante 3",
-            "categoria": "Contemporânea",
-            "distancia": "300km",
-            "valor_frete": "30",
-            "tempo_entrega": "30"
-        }
-    ]
+        "categorias": [
+            {
+                "id": 1,
+                "img_url": "https://i2.wp.com/files.agro20.com.br/uploads/2020/03/comidabrasileira3.jpg?fit=1024%2C585&ssl=1",
+                "nome": "Brasileira"
+            },
+            {
+                "id": 2,
+                "img_url": "https://www.saboravida.com.br/wp-content/uploads/2017/06/o-que-e-cozinha-contemporanea.jpg",
+                "nome": "Contemporânea"
+            },
+            {
+                "id": 3,
+                "img_url": "https://blog.duogourmet.com.br/wp-content/uploads/2019/07/10-Duo-Gourmet-Culinaria.jpg",
+                "nome": "Mediterrânea"
+            }
+        ],
+        "restaurantes": [
+            {
+                "id": 1,
+                "url_img": "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/7d/fa/salao.jpg",
+                "nota": "5",
+                "nome": "Restaurante 1",
+                "categoria": "Brasileira, Mediterrânea, Contemporânea",
+                "distancia": "400km",
+                "valor_frete": "30",
+                "tempo_entrega": "20"
+            },
+            {
+                "id": 2,
+                "url_img": "https://www.englishriviera.co.uk/imageresizer/?image=%2Fdbimgs%2FER%20Gal-Torquay%206-Bistrot%20Pierre%20Restaurants.jpg&action=FeaturedItemsScroll20193x2",
+                "nota": "5",
+                "nome": "Restaurante 2",
+                "categoria": "Brasileira",
+                "distancia": "350km",
+                "valor_frete": "35",
+                "tempo_entrega": "25"
+            },
+            {
+                "id": 3,
+                "url_img": "https://d3m7xw68ay40x8.cloudfront.net/assets/2019/10/23091614/NOV19-charlotte-restaurants-serving-global-fare-hawkers-restaurant-timrobison.jpg",
+                "nota": "5",
+                "nome": "Restaurante 3",
+                "categoria": "Contemporânea",
+                "distancia": "300km",
+                "valor_frete": "30",
+                "tempo_entrega": "30"
+            }
+        ]
+    }
 }

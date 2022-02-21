@@ -3,6 +3,7 @@ import { useState, useContext, useEffect } from 'react'
 import { Text, View, Alert, ActivityIndicator } from 'react-native'
 import RestauranteItem from '../../components/RestauranteItem';
 import CategoriaItem from '../../components/CategoriaItem';
+import axios from 'axios'
 import {
     SafeAreaView,
     ViewActivity,
@@ -12,8 +13,10 @@ import {
     ViewRestaurantes,
     ButtonTipoSelect,
     TextTipoSelect,
+    TituloRestaurantes,
     SelectTipo
 } from './styles'
+import db from '../../../db/db.json'
 
 export default function Principal() {
     const [banner, setBanner] = useState([])
@@ -25,13 +28,10 @@ export default function Principal() {
     useEffect(() => {
         async function buscaDados() {
             try {
-                const response = await fetch('http://my-json-server.typicode.com/pablodev/app-ifood-clone/db')
-
-                const data = await response.json()
-
                 setLoaded(true)
 
-                setBanner(data.banner_principal)
+                const { data } = db;
+                setBanner(data.banner)
                 setCategorias(data.categorias)
                 setRestaurantes(data.restaurantes)
             } catch (e) {
@@ -93,7 +93,7 @@ export default function Principal() {
             <StatusBar style="theme-dark" />
             <SafeAreaView>
                 {loaded ? (
-                    <ViewHome/>
+                    <ViewHome />
                 ) :
                     (
                         <ViewActivity>
