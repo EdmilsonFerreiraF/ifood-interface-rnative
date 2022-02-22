@@ -19,6 +19,6 @@ margin-left: 20px;
 margin-top: 10px;
 `
 
-export const RestauranteFoto = styled.View`
-    border-radius: 25;
+export const RestauranteFoto = styled.Image`
+    border-radius: 25px;
 `

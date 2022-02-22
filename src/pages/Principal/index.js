@@ -3,6 +3,7 @@ import { useState, useContext, useEffect } from 'react'
 import { Text, View, Alert, ActivityIndicator } from 'react-native'
 import RestauranteItem from '../../components/RestauranteItem';
 import CategoriaItem from '../../components/CategoriaItem';
+import BannerItem from '../../components/BannerItem';
 import axios from 'axios'
 import {
     SafeAreaView,
@@ -19,7 +20,7 @@ import {
 import db from '../../../db/db.json'
 
 export default function Principal() {
-    const [banner, setBanner] = useState([])
+    const [banners, setBanners] = useState([])
     const [categorias, setCategorias] = useState([])
     const [restaurantes, setRestaurantes] = useState([])
     const [loaded, setLoaded] = useState(false)
@@ -31,7 +32,7 @@ export default function Principal() {
                 setLoaded(true)
 
                 const { data } = db;
-                setBanner(data.banner)
+                setBanners(data.banners)
                 setCategorias(data.categorias)
                 setRestaurantes(data.restaurantes)
             } catch (e) {
@@ -65,8 +66,8 @@ export default function Principal() {
                     ))}
                 </CategoriaView>
                 <BannerView horizontal={true} showsHorizontalScrollIndicator={false}>
-                    {categorias.map(categoria => (
-                        <CategoriaItem key={banner.id} foto={banner.img_url} texto={banner.nome} />
+                    {banners.map(banner => (
+                        <BannerItem key={banner.id} foto={banner.img_url} />
                     ))}
                 </BannerView>
                 <TituloRestaurantes>Restaurantes</TituloRestaurantes>

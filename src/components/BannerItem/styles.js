@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/native'
 
 export const BannerView = styled.View`
     margin-left: 20px;

@@ -1,9 +1,12 @@
 {
     "token": "bsNKzFErp4dqAbZMjR4PpA",
     "data": {
-        "banner": {
-            "img_url": "https://www.linguahouse.com/linguafiles/md5/d01dfa8621f83289155a3be0970fb0cb"
-        },
+        "banners": [
+            {
+                "id": 1,
+                "img_url": "https://images.adsttc.com/media/images/5d80/6cc7/284d/d15e/5d00/05f0/large_jpg/feature_-_003.jpg"
+            }
+        ],
         "categorias": [
             {
                 "id": 1,

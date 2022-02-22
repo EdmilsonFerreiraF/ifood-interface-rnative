@@ -3,9 +3,9 @@ import React from 'react';
 
 import { CategoriaView, CategoriaFoto, CategoriaTexto } from './styles';
 
-const CategoriaItem = ({ foto, texto, key }) => {
+const CategoriaItem = ({ foto, texto }) => {
     return (
-        <CategoriaView key={key}>
+        <CategoriaView>
             <CategoriaFoto source={{
                 uri: foto.trim(),
                 width: 98,
