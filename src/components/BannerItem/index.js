@@ -6,7 +6,7 @@ const BannerItem = ({ foto }) => {
     return (
         <BannerView>
             <BannerFoto source={{
-                url: foto.trim(),
+                uri: foto.trim(),
                 width: (Dimensions.get('window').width) - 50,
                 height: 100,
                 resizeMode: 'contain'
